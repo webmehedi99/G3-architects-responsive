@@ -115,6 +115,30 @@ main > section{
 #quick-list{
     font-weight: 500;
 }
+
+/* features section related style */
+#features-section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 21px;
+}
+.feature-card{
+    padding: 30px;
+    box-shadow: 0px 4px 30px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+.feature-card, .feature-card-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    
+}
+.feature-description{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.features{
+    gap: 140px;
+}
 .fact-card{
     border: 1px solid #FF900E;
     width: 240px;
@@ -125,9 +149,7 @@ main > section{
     justify-content: center;
       
 }
-/* .fact-image{
-    margin-top: 50px;
-} */
+
 .fact-number{
     font-size: 2.8rem;
     font-weight: 600;
