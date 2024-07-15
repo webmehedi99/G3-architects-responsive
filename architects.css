@@ -105,7 +105,7 @@ main > section{
     margin-left: 73px;
     /* width: 540px; */
 }
-.features-title{
+.section-title{
     font-size: 2.8rem;
     font-weight: 700;
 }
@@ -115,20 +115,91 @@ main > section{
 #quick-list{
     font-weight: 500;
 }
+.fact-card{
+    border: 1px solid #FF900E;
+    width: 240px;
+    height: 240px;
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+      
+}
+/* .fact-image{
+    margin-top: 50px;
+} */
+.fact-number{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.fact-name{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.fact-description{
+    width: 540px;
+    margin-bottom: 60px;
+}
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 125px;
+}
+
+  /* sponsor related style */
+   .sponsor-info{
+        max-width: 540px;
+        margin: 50px auto;
+        text-align: center;
+    }
+
+.sponsor-title{
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.sponsor-companies{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.sponsor-companies img{
+    filter: grayscale(100%);
+}
+
 /* resonsive media query */
 @media screen and (max-width:576px) {
     .navbar, 
     .nab-links,
-    .teams{
+    .teams,
+    .facts-container{
         flex-direction: column;
     }
-    .teams-image-container{
+    .teams-image-container, .facts-container, .sponsor-companies{
         grid-template-columns: repeat(1, 1fr);
     }
+
     .features{
         margin:10px;
         text-align: center;
     }
+    .facts-container{
+        justify-items: center;
+        gap: 30px;
+    }
+    .fact-description{
+        width: 100%;
+        
+    }
+.sponsor-companies{
+    justify-items: center;
+    gap: 50px;
+}
+
+
+   
 }
 /* medium size device */
 @media screen and (min-width:576px) and (max-width:990px) {
@@ -139,11 +210,22 @@ main > section{
     .navbar{
         margin-left: 20px;
     }
-    .features{
-        margin-left: 50px;
-        margin-right: 50px;
+    .facts-container{
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-evenly;
+        justify-items: center;
+        
     }
-    .features-description{
+    .some-facts{
         text-align: center;
+    }
+    .fact-description{
+       margin-left: 140px;
+    }
+    .sponsor-companies {
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+        gap: 40px;
     }
 }
